@@ -63,3 +63,46 @@
 <section class='grid place-items-center p-10'>
 	<a href='https://codeberg.org/ditko' class='underline'>Project link</a>
 </section>
+
+<section class='grid place-items-center p-10'>
+	<p class='max-w-[700px]'>
+		Ditko is an informal development group made up of friends who collaborate on software projects.
+		The group follows the UNIX and POSIX philosophies, emphasizing software that is reliable, secure,
+		simple, readable, and functional.
+	</p>
+
+	<h3 class='mt-10 mb-6'>Key characteristics of Ditko:</h3>
+
+	<ol class='flex flex-col gap-4 list-[upper-roman] max-w-[700px]'>
+		<li>
+			<b>Project Ownership</b>
+
+			<ul class='list-disc'>
+				<li>Each project has a owner(s).</li>
+				<li>The owner decides the project's development process, code style, and guidelines, while respecting the group's principles.</li>
+				<li>Owners are responsible for coordinating contributions and ensuring consistency across the project.</li>
+			</ul>
+		</li>
+
+		<li>
+			<b>Collaboration</b>
+
+			<ul class='list-disc'>
+				<li>Members work together voluntarily.</li>
+				<li>New developers may join individual projects, but their contributions and access are governed by the owner and the project-specific practices.</li>
+				<li>Collaboration is encouraged through open discussions, code reviews, and shared problem-solving.</li>
+			</ul>
+		</li>
+
+		<li>
+			<b>Philosophy and Goals</b>
+
+			<ul class='list-disc'>
+				<li>Focus on clean, minimal, and maintainable code.</li>
+				<li>Software developed aligns with UNIX simplicity and POSIX standards.</li>
+				<li>Prioritize legibility so others can learn from the code.</li>
+				<li>Focus on efficiency, and long-term sustainability of the code.</li>
+			</ul>
+		</li>
+	</ol>
+</section>
