@@ -7,7 +7,8 @@
 
 body {
 	background: black;
-	color: #e5e5e5
+	color: #e5e5e5;
+	min-height: 100vh
 }
 
 @keyframes blink {
