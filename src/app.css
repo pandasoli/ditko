@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+* { font-family: 'Roboto Mono' }
+
+body {
+	background: #161616;
+	color: #e5e5e5
+}
+
+@keyframes blink {
+	0%, 100% { opacity: 1 }
+	50% { opacity: 0 }
+}
+
+.caret { animation: blink 1.5s step-start infinite }
