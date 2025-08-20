@@ -21,7 +21,7 @@
 
 <div class='flex justify-center gap-10'>
 	<div>
-		<pre class='text-xl font-light'>{drawing}</pre>
+		<pre class='text-lg sm:text-xl font-light'>{drawing}</pre>
 		<p class='flex'>#&nbsp;<TypeWriter phrases={[ 'Reliable', 'Secure', 'Simple', 'Readable', 'Good' ]} /></p>
 	</div>
 

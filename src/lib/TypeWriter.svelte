@@ -52,7 +52,7 @@
 	})
 </script>
 
-<p>
+<span>
 	<!-- .caret is a global CSS class -->
 	{display}<span class='bg-white w-10' class:opacity-100={!paused} class:caret={paused}>|</span>
-</p>
+</span>
