@@ -77,7 +77,7 @@
 		<li>
 			<b>Project Ownership</b>
 
-			<ul class='list-disc'>
+			<ul class='list-disc text-gray-400'>
 				<li>Each project has a owner(s).</li>
 				<li>The owner decides the project's development process, code style, and guidelines, while respecting the group's principles.</li>
 				<li>Owners are responsible for coordinating contributions and ensuring consistency across the project.</li>
@@ -87,7 +87,7 @@
 		<li>
 			<b>Collaboration</b>
 
-			<ul class='list-disc'>
+			<ul class='list-disc text-gray-400'>
 				<li>Members work together voluntarily.</li>
 				<li>New developers may join individual projects, but their contributions and access are governed by the owner and the project-specific practices.</li>
 				<li>Collaboration is encouraged through open discussions, code reviews, and shared problem-solving.</li>
@@ -97,7 +97,7 @@
 		<li>
 			<b>Philosophy and Goals</b>
 
-			<ul class='list-disc'>
+			<ul class='list-disc text-gray-400'>
 				<li>Focus on clean, minimal, and maintainable code.</li>
 				<li>Software developed aligns with UNIX simplicity and POSIX standards.</li>
 				<li>Prioritize legibility so others can learn from the code.</li>

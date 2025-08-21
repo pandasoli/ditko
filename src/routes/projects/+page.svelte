@@ -42,7 +42,7 @@
 			<article class='flex flex-col gap-4'>
 				<h2 class='text-lg'><a href='https://codeberg.org/ditko/{title}' class='underline'>{title}</a></h2>
 
-				<p class='text-sm text-gray-700 line-clamp-3'>{description}</p>
+				<p class='text-sm text-gray-400 line-clamp-3'>{description}</p>
 
 				<div class='flex gap-2'>
 					{#each leaders as leader}
