@@ -22,7 +22,8 @@ const walk = (dir: string): Tree[] =>
 	})
 
 export const GET: RequestHandler = async () => {
-	const tree = walk('src/docs')
+	const docsDir = path.resolve(process.cwd(), 'src/docs')
+	const tree = walk(docsDir)
 
 	return new Response(JSON.stringify(tree), {
 		headers: { 'Content-Type': 'application/json' }
