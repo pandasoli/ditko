@@ -2,6 +2,7 @@
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
+@import './markdown.css';
 
 * { font-family: 'Roboto Mono' }
 

@@ -40,7 +40,7 @@
 	<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
 		{#each projects as { title, description, leaders }}
 			<article class='flex flex-col gap-4'>
-				<h2 class='text-lg'><a href='https://codeberg.org/ditko/{title}' class='underline'>{title}</a></h2>
+				<h2 class='text-lg'><a href='/docs/{title}' class='underline'>{title}</a></h2>
 
 				<p class='text-sm text-gray-400 line-clamp-3'>{description}</p>
 
