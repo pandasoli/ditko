@@ -9,8 +9,10 @@ export const load: PageServerLoad = async ({ params }) => {
 	const slug = params.slug
 	let path_ = path.join('src/docs', slug)
 
-	if (fs.existsSync(path_) && fs.statSync(path_).isDirectory())
-		path_ = path.join(path_, 'index.md')
+	if (fs.existsSync(path_)) {
+		if (fs.statSync(path_).isDirectory())
+			path_ = path.join(path_, 'index.md')
+	}
 	else
 		path_ += '.md'
 
