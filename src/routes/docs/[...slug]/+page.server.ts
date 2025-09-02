@@ -1,26 +1,21 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
 import type { PageServerLoad } from './$types'
 import { error } from '@sveltejs/kit'
+import matter from 'gray-matter'
 import { marked } from 'marked'
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, fetch }) => {
 	const slug = params.slug
-	const docsDir = path.resolve(process.cwd(), 'src/docs')
-	let docPath = path.join(docsDir, slug)
+	let url = `/docs/${slug}`
 
-	if (fs.existsSync(docPath)) {
-		if (fs.statSync(docPath).isDirectory())
-			docPath = path.join(docPath, 'index.md')
-	}
-	else
-		docPath += '.md'
+	let res = await fetch(`${url}/index.md`)
 
-	if (!fs.existsSync(docPath))
+	if (!res.ok)
+		res = await fetch(`${url}.md`)
+
+	if (!res.ok)
 		throw error(404, 'Not found')
 
-	const raw = fs.readFileSync(docPath, 'utf-8')
+	const raw = await res.text()
 	const { content, data } = matter(raw)
 	const html = marked(content)
 
